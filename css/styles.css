@@ -1,0 +1,1042 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html, body{
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
+
+body{
+  background:#ffffff;
+  color:#0f172a;
+}
+
+/* Nav */
+
+nav{
+  background:#000000;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:10px;
+  transition:0.3s ease;
+  border-bottom:1px solid #1e293b;
+  position:relative;
+}
+
+nav:hover {
+  padding: 20px;
+}
+
+/* Logo */
+
+.logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-section img {
+  width: 100px;
+  height: auto;
+}
+
+/* Nav buttons*/
+
+.nav-dark-light {
+  display: flex;
+  gap:10px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.nav-button {
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  align-items: center;
+  
+}
+
+/* HAMBURGER BASE (hidden on desktop) */
+.hamburger {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Nav links*/
+
+.nav-button a{
+  text-decoration:none;
+  color:#ffffff;
+  background:#1f1f1f;
+  padding:6px 16px;
+  border-radius:20px;
+  font-size:16px;
+  transition:0.3s ease;
+  border:1px solid transparent;
+}
+
+.nav-button a:hover{
+  transform:scale(1.1);
+  background:#2a2a2a;
+  border:1px solid #3b82f6;
+}
+
+/* Dark and Light Mode Button */
+
+#theme-toggle{
+  background:#1f1f1f;
+  border:1px solid #333;
+  color:#ffffff;
+  padding:8px 16px;
+  border-radius:20px;
+  cursor:pointer;
+  font-size:15px;
+  transition:0.3s ease;
+}
+
+#theme-toggle:hover{
+  transform:scale(1.1);
+  border-color:#3b82f6;
+}
+
+/* Hero */
+
+.hero{
+  display: block;
+  margin: 20px auto;
+  width: 70%;
+}
+
+/* Section */
+
+section{
+  width:90%;
+  max-width:1700px;
+  margin:auto;
+}
+
+.info-box{
+  background:#f8fafc;
+  border-radius:15px;
+  height:auto;
+  justify-content:center;
+  align-items:center;
+  font-size:20px;
+  font-weight:bold;
+  margin-bottom:40px;
+  border:1px solid #e5e7eb;
+  padding: 30px
+}
+
+/* Heading */
+
+h2{
+  text-align:center;
+  font-size:54px;
+  margin:40px 0 30px;
+}
+
+/* Meet Our Team */
+
+.team-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:35px;
+  margin-bottom:60px;
+}
+
+.team-member{
+  text-align:center;
+}
+
+
+.team-member img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  display: block;
+  border: 4px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.team-card{
+  background:#f8fafc;
+  min-height:260px;
+  padding:20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:18px;
+  border:1px solid #e5e7eb;
+}
+
+.team-card p{
+  font-size:20px;
+  line-height:1.6;
+  font-weight:normal;
+  text-align:center;
+}
+
+/* Register Form */
+
+.register-section{
+  width:90%;
+  max-width:900px;
+  margin:60px auto;
+}
+
+.register-form{
+  background:#d9d9d9;
+  padding:60px;
+  border-radius:20px;
+}
+
+.register-form h2{
+  text-align:left;
+  font-size:48px;
+  margin-bottom:40px;
+}
+
+.register-form h3{
+  font-size:42px;
+  margin:50px 0 25px;
+}
+
+.register-form label{
+  display:block;
+  font-size:22px;
+  margin-bottom:12px;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="tel"],
+.register-form input[type="number"]{
+  width:100%;
+  padding:16px;
+  margin-bottom:30px;
+  border:none;
+  border-radius:10px;
+  font-size:18px;
+}
+
+.membership-options{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.membership-options label{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.membership-options input{
+  width:22px;
+  height:22px;
+}
+
+textarea{
+  width:100%;
+  height:220px;
+  padding:20px;
+  resize:none;
+  border:none;
+  border-radius:10px;
+  font-size:18px;
+  margin-bottom:40px;
+  background:#3a3a3a;
+  color:white;
+}
+
+.checkbox-group{
+  border-top:1px solid #999;
+  border-bottom:1px solid #999;
+  padding:30px 0;
+}
+
+.checkbox-group label{
+  display:flex;
+  align-items:flex-start;
+  gap:15px;
+  margin-bottom:25px;
+  line-height:1.5;
+}
+
+.checkbox-group input{
+  width:22px;
+  height:22px;
+  margin-top:5px;
+}
+
+.form-buttons{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  margin-top:40px;
+}
+
+.form-buttons button{
+  background:#6b6b6b;
+  color:white;
+  border:none;
+  padding:18px 45px;
+  border-radius:8px;
+  font-size:20px;
+  cursor:pointer;
+  transition:0.3s ease;
+}
+
+.form-buttons button:hover{
+  background:#4b4b4b;
+  transform:scale(1.05);
+}
+
+fieldset {
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+/* Events Page */
+
+.events-section{
+  width:90%;
+  max-width:1700px;
+  margin:50px auto 80px;
+}
+
+.event-box{
+  background:#f8fafc;
+  border:1px solid #e5e7eb;
+  border-radius:20px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  margin-bottom:50px;
+  text-align:center;
+}
+
+/* Countdown */
+
+.countdown-box{
+  min-height:260px;
+}
+
+.countdown-box h2{
+  font-size:72px;
+  margin:0;
+}
+
+/* Calendar */
+
+.calendar-box{
+  min-height:700px;
+}
+
+.calendar-box h2{
+  font-size:68px;
+  margin:0;
+}
+
+.calendar{
+  width:100%;
+  max-width:1000px;
+}
+
+.calendar-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+}
+
+.calendar-header h2{
+  font-size:42px;
+  margin:0;
+}
+
+.calendar-header button{
+  background:#000000;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  font-size:24px;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.3s ease;
+}
+
+.calendar-header button:hover{
+  background:#1e293b;
+  border:1px solid #3b82f6;
+}
+
+.calendar-days,
+.calendar-dates{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:12px;
+}
+
+.calendar-days div{
+  font-weight:bold;
+  font-size:22px;
+  text-align:center;
+  padding:15px 0;
+}
+
+.calendar-dates div{
+  background:#ffffff;
+  border:1px solid #cbd5e1;
+  min-height:100px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  font-size:22px;
+  border-radius:12px;
+}
+
+.today {
+  outline: 3px solid #a855f7;
+  background: #f3e8ff;
+  font-weight: bold;
+}
+
+/* Event Day */
+
+.event-day{
+  background:#3b82f6 !important;
+  color:white;
+  font-weight:bold;
+}
+
+/* Event Photos */
+
+.event-title{
+  text-align:center;
+  font-size:72px;
+  margin:80px 0 50px;
+}
+
+.event-gallery{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:35px;
+}
+
+.gallery-card{
+  background:#f8fafc;
+  border:1px solid #e5e7eb;
+  overflow:hidden;
+}
+
+.gallery-card img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  display:block;
+}
+
+.gallery-card img:hover{
+  transform:scale(1.03);
+  transition:0.3s ease;
+}
+
+
+/* Footer */
+
+footer{
+  background:#000000;
+  color:#ffffff;
+
+  width:100vw;        
+  position:relative;
+
+  left:50%;
+  right:50%;
+  margin-left:-50vw;  
+  margin-right:-50vw;
+
+  padding:35px 0 20px;
+}
+
+.footer-container{
+  display:flex;
+  justify-content:space-between;
+  gap:40px;
+  flex-wrap:wrap;
+  max-width:1100px; 
+  margin:0 auto;     
+  padding:0 20px;    
+}
+
+.footer-contact .contact-us a{
+  color: white;
+}
+
+.socials{
+  display:flex;
+  gap:10px;
+}
+
+.social-title{
+  margin-top: 50px;
+}
+
+.socials img{
+  display:flex;
+  gap:10px;
+  width:22px;
+  height:22px;
+  background:#1f1f1f;
+  border:1px solid #333;
+}
+
+.footer-table{
+  width:240px;
+  border-collapse:collapse;
+  background:#1a1a1a;
+}
+
+.footer-table td{
+  border:1px solid #333;
+  color:#ffffff;
+  padding:6px 10px;
+  font-size:12px;
+}
+
+.map{
+ width: 300px;
+ height: 220px;
+}
+
+.copyright{
+  text-align:center;
+  margin-top:30px;
+  font-size:12px;
+  color:#9ca3af;
+}
+
+/* Dark Mode */
+
+.dark-mode{
+  background:#0f172a;
+  color:#e5e7eb;
+}
+
+.dark-mode nav{
+  background:#0b1220;
+  border-bottom:1px solid #1e293b;
+}
+
+.dark-mode .nav-button a{
+  background:#1e293b;
+  color:#e5e7eb;
+  border:1px solid transparent;
+}
+
+.dark-mode .nav-button a:hover{
+  background:#111c33;
+  border:1px solid #3b82f6;
+}
+
+.dark-mode #theme-toggle{
+  background:#1e293b;
+  color:#e5e7eb;
+  border:1px solid #334155;
+}
+
+.dark-mode .hero{
+  background:linear-gradient(135deg, #0b1220, #1e293b);
+  color:#60a5fa;
+}
+
+.dark-mode .info-box,
+.dark-mode .team-card,
+.dark-mode .team-member img{
+  background:#1e293b;
+  border:1px solid #334155;
+}
+
+.dark-mode footer{
+  background:#0b1220;
+  color:#e5e7eb;
+}
+
+.dark-mode .socials div{
+  background:#1e293b;
+  border:1px solid #334155;
+}
+
+.dark-mode .footer-table{
+  background:#1e293b;
+}
+
+.dark-mode .footer-table td{
+  color:#e5e7eb;
+  border:1px solid #334155;
+}
+
+.dark-mode .register-form{
+  background:#1e293b;
+}
+
+.dark-mode .register-form input,
+.dark-mode textarea{
+  background:#0f172a;
+  color:#e5e7eb;
+  border:1px solid #334155;
+}
+
+.dark-mode .checkbox-group{
+  border-color:#334155;
+}
+
+.dark-mode .form-buttons button{
+  background:#334155;
+}
+
+.dark-mode .form-buttons button:hover{
+  background:#475569;
+}
+
+.dark-mode .event-box,
+.dark-mode .gallery-card{
+  background:#1e293b;
+  border:1px solid #334155;
+}
+
+.dark-mode .event-title,
+.dark-mode .event-box h2{
+  color:#e5e7eb;
+}
+
+.dark-mode .calendar-dates div{
+  background:#0f172a;
+  border:1px solid #334155;
+  color:#e5e7eb;
+}
+
+.dark-mode .calendar-header button{
+  background:#334155;
+}
+
+/* EVENT DAY override in dark mode */
+.dark-mode .event-day {
+  background:#3b82f6 !important;
+  color:white;
+}
+
+.dark-mode .event-day.today {
+  background: linear-gradient(135deg, #3b82f6 50%, #334155 50%);
+  color: white;
+}
+
+.dark-mode .team-member img {
+  border: 4px solid #334155;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 600px) {
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .nav-button {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .hero {
+    width: 95%;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-member img {
+    height: 400px;
+  }
+
+  .event-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .calendar-days div,
+  .calendar-dates div {
+    font-size: 14px;
+    min-height: 60px;
+  }
+
+  .countdown-box h2 {
+    font-size: 32px;
+  }
+
+  .calendar-box h2 {
+    font-size: 28px;
+  }
+
+  .register-form {
+    padding: 25px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .map {
+    width: 100%;
+    height: 250px;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .logo-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15px;
+  }
+
+  .logo-section img {
+    width: 80px;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+    background: #000;
+  }
+
+  main {
+    padding-top: 120px;
+  }
+
+  .logo-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15px;
+  }
+
+  .logo-section img {
+    width: 80px;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2100;
+  }
+
+  .nav-dark-light {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2100;
+  }
+
+  .nav-button {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    margin-top: 80px;
+    padding-bottom: 20px;
+  }
+
+  nav.active .nav-button {
+    display: flex;
+    animation: drop 0.25s ease;
+  }
+
+  nav.active {
+    padding-bottom: 30px;
+  }
+
+  nav {
+    align-items: flex-start;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  }
+  .footer-container {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-contact,
+.footer-hours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-contact .contact-us a {
+  display: block;
+  text-align: center;
+}
+
+.socials {
+  justify-content: center;
+}
+
+.footer-table {
+  margin: 0 auto;
+}
+
+.map {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 320px;
+  height: 220px;
+}
+
+.copyright {
+  text-align: center;
+
+}
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .event-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-member img {
+    height: 500px;
+  }
+
+  .hero {
+    width: 85%;
+  }
+
+  .calendar {
+    max-width: 90%;
+  }
+
+  .countdown-box h2 {
+    font-size: 48px;
+  }
+
+  .calendar-box h2 {
+    font-size: 40px;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .logo-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15px;
+  }
+
+  .logo-section img {
+    width: 80px;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+    background: #000;
+  }
+
+  main {
+    padding-top: 120px;
+  }
+
+  .logo-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15px;
+  }
+
+  .logo-section img {
+    width: 80px;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2100;
+  }
+
+  .nav-dark-light {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2100;
+  }
+
+  .nav-button {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    margin-top: 80px;
+    padding-bottom: 20px;
+  }
+
+  nav.active .nav-button {
+    display: flex;
+    animation: drop 0.25s ease;
+  }
+
+  nav.active {
+    padding-bottom: 30px;
+  }
+
+  nav {
+    align-items: flex-start;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  }
+
+  .footer-container {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-contact,
+.footer-hours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-contact .contact-us a {
+  display: block;
+  text-align: center;
+}
+
+.socials {
+  justify-content: center;
+}
+
+.footer-table {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.map {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 320px;
+  height: 220px;
+}
+
+.copyright {
+  text-align: center;
+}
+}
+
+@media (min-width: 1025px) {
+  .event-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  nav {
+    min-height: 220px;
+    padding: 40px 20px;
+  }
+
+  .logo-section img {
+    width: 170px;
+  }
+
+  .nav-button a {
+    font-size: 20px;
+    padding: 10px 22px;
+  }
+
+  /* Footer */
+
+  .footer-container{
+    max-width:1600px;
+    padding:0 60px;
+    gap:80px;
+  }
+
+  .map{
+    width:600px;
+    height:420px;
+  }
+
+  .socials img{
+    width:45px;
+    height:45px;
+  }
+
+  .footer-table td{
+    font-size:15px;
+    padding:14px 18px;
+  }
+
+  .copyright{
+    font-size:18px;
+  }
+}
