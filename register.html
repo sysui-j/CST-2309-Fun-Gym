@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fun-ctional Gym Registration Page</title>
+
+  <link rel="shortcut icon" href="images/favicon_io/favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="scripts/form.js" defer></script>
+  <script src="scripts/nav.js" defer></script>
+</head>
+
+<body>
+  <header>
+  <!-- Nav -->
+    <nav> 
+        <div class="nav-dark-light">
+            <button id="theme-toggle">Dark Mode</button>
+        </div>
+        
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        
+        <div class="logo-section">
+            <img src="images/fun-gym-icon.jpg" alt="The Fun-ctional Gym Logo">
+        </div>
+
+        <div class="nav-button">
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="events.html">Events</a>
+        </div>
+    </nav>
+  </header>
+  <!-- Main  -->
+
+  <main>
+    <section class="register-section">
+
+      <form class="register-form">
+
+          <fieldset>
+          <legend>Personal Information</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required min="1" max="120">
+        </fieldset>
+
+        <!-- Membership -->
+        <fieldset>
+        <legend>Membership Type</legend>
+          <label><input type="radio" name="membership" value="basic" required>Basic ($10)</label>
+          <label><input type="radio" name="membership" value="bronze">Bronze ($15)</label>
+          <label><input type="radio" name="membership" value="gold">Gold ($25)</label>
+          <label><input type="radio" name="membership" value="diamond">Diamond ($40)</label>
+      </fieldset>
+
+        <!-- Goals -->
+        <fieldset>
+          <legend>Notifications</legend>
+          <label><input type="checkbox">Receive Emails for promotions, special offers, and events.</label>
+          <label><input type="checkbox">Receive Text Messages for promotions, special offers, and events.</label>
+        </fieldset>
+
+        <!-- Buttons -->
+        <div class="form-buttons">
+          <button type="reset">Clear Form</button>
+          <button type="submit">Submit</button>
+        </div>
+
+      </form>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+   <footer>
+
+  <div class="footer-container">
+
+    <!-- Contact -->
+    <div class="footer-contact">
+
+      <div class="contact-us">
+        <h3>Contact Us</h3>
+
+        <a href="#"><p>1876 83rd St, Brooklyn, NY 11214</p></a>
+        <a href="tel:9293759432">(929) 375-9432</a>
+        <a href="mailto:functional@gym.org">functional@gym.org</a>
+        <br>
+        <a href="#"><p>www.functionalgym.org</p></a>
+      </div>
+
+      <h3 class="social-title">Find Us Here</h3>
+      
+      <div class="socials">
+        <a href="#"><img src="images/facebook-logo.png" alt="facebook"></a>
+        <a href="#"><img src="images/tiktok-logo.png" alt="tiktok"></a>
+        <a href="#"><img src="images/instagram-logo.png" alt="instagram"></a>
+        <a href="#"><img src="images/x-logo.png" alt="x"></a>
+        <a href="#"><img src="images/youtube-logo.png" alt="youtube"></a>
+      </div>
+
+    </div>
+
+    <!-- Hours -->
+    <div class="footer-hours">
+
+      <h3>Hours</h3>
+
+      <table class="footer-table">
+        <tr><td>Sunday</td><td>5:00AM - 9:00PM</td></tr>
+        <tr><td>Monday</td><td>5:00AM - 12:00AM</td></tr>
+        <tr><td>Tuesday</td><td>5:00AM - 12:00AM</td></tr>
+        <tr><td>Wednesday</td><td>5:00AM - 12:00AM</td></tr>
+        <tr><td>Thursday</td><td>5:00AM - 12:00AM</td></tr>
+        <tr><td>Friday</td><td>5:00AM - 12:00AM</td></tr>
+        <tr><td>Saturday</td><td>5:00AM - 3:00AM</td></tr>
+      </table>
+
+    </div>
+
+    <!-- Map -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24229.07250075038!2d-73.98953568368759!3d40.61589675999351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1779131432802!5m2!1sen!2sus" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade"
+                  class="map">
+       </iframe>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 Placeholder All Rights Reserved.
+  </div>
+
+</footer>
+
+</body>
+</html>
